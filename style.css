@@ -146,3 +146,10 @@ font-family: 'Ysabeau SC', sans-serif;*/
     
   }
   
+  .btn{
+    background-color: rgb(236, 195, 141);
+    color: #000;
+    font-family: 'Poiret One', sans-serif;
+    border-color: rgb(214, 173, 119);
+  }
+  
