@@ -6,7 +6,28 @@
     border:0
     }
 
-    
+    /*Variables* - a vantagem de usar assim, é que se um site que eu recriei mudar a cor, eu não preciso ficar pesquisando a cor para alterar na mão, só alteraria em um único lugar*/
+
+:root {
+    /*Colors*/
+    --main-bg-color: #000;
+    --main-text-color: #fff;
+    --main-grey-color: #222;
+    --main-red-color: #f40612;
+    --main-secundary-grey-color: #303030;
+    /*Font sizes*/
+    --fs--16: 16px;
+    --fs--18: 18px;
+    --fs--20: 20px;
+    --fs--24: 24px;
+    --fs--26: 26px;
+    --fs--28: 28px;
+    --fs--32: 32px;
+    --fs--40: 40px;
+    --fs--48: 48px;
+    --fs--64: 64px;
+}
+
 .bt {
     font-family: "Zapfino", serif;
     font-weight: 700;
