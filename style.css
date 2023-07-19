@@ -145,7 +145,16 @@ font-family: 'Ysabeau SC', sans-serif;*/
 
     
   }
-  
+
+  #tituloSecundario{
+margin: 5%;
+  }
+
+
+  .card{
+    width: auto;
+  }
+
   .btn{
     background-color: rgb(236, 195, 141);
     color: #000;
