@@ -146,6 +146,15 @@ font-family: 'Ysabeau SC', sans-serif;*/
     
   }
 
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu a.dropdown-item:hover {
+    background-color: #faebd7;
+    color: #000;
+  }
+
   #tituloSecundario{
 margin: 5%;
   }

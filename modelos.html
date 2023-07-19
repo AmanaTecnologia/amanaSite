@@ -22,42 +22,82 @@
 
 <body class=" container-fluid bg2">
     <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" target="_blank"><img src="Amana.png" style="width: 80px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+                        <a class="nav-link active" href="#valores">Preços</a>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html#area" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: #0a0a09 ;"
+                                onclick="redirecionarParaIndex()">
+                                Modelos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Advocacia</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Saúde</a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">Educação</a></li>
+                                <hr class="dropdown-divider">
+                                
+                            </ul>
+                        </li>
+                        <a class="nav-link active" href="#contato">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <h4 id="tituloSecundario">Escolha seu modelo</h4>
     </header>
 
     <main>
         <!--Sessão dos modelos de adv-->
-        <section id="advocacia">
+        <section id="modelos">
 
 
             <div class="row">
                 <div class="col-sm-6 mb-3 mb-sm-0">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Modelos para área da advocacia</h5>
-                      <img src="modeloAdv.jpg" class="card-img-top" alt="...">
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary d-grid">Visite o site modelo</a>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Modelos para área da advocacia</h5>
+                            <img src="modeloAdv.jpg" class="card-img-top" alt="...">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://maluchaves91.github.io/vcadvocacia/" target="_blank"
+                                class="btn btn-primary d-grid">Visite o site modelo</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
 
-                
+
 
                 <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Modelos para área da saúde</h5>
-                      <img src="modeloAdv.jpg" class="card-img-top" alt="...">
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary d-grid">Visite o site modelo</a>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Modelos para área da saúde</h5>
+                            <img src="modeloAdv.jpg" class="card-img-top" alt="...">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://maluchaves91.github.io/vcadvocacia/" target="_blank"
+                                class="btn btn-primary d-grid">Visite o site modelo</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
 
-            
-                
+
+
             </div>
             <!--Fim da essão dos modelos de adv-->
         </section>
