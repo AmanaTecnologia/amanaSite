@@ -15,6 +15,12 @@
     --main-grey-color: #222;
     --main-red-color: #f40612;
     --main-secundary-grey-color: #303030;
+    --main-neutral-0: #d4a373;
+    --main-neutral-10: ##687466;
+    --main-neutral-30: ##cd8d7b;
+    --main-neutral-30: #fbc490;
+
+
     /*Font sizes*/
     --fs--16: 16px;
     --fs--18: 18px;
@@ -170,4 +176,103 @@ margin: 5%;
     font-family: 'Poiret One', sans-serif;
     border-color: rgb(214, 173, 119);
   }
+
+  .links{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .col{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  /* CSS para o botão */
+.btn-primary:hover {
+    background-color: rgb(165, 130, 130); 
+    
+
+}
+
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Poiret+One&family=Pompiere&family=Ysabeau+SC:wght@300&display=swap');
+*{
+    font-family: 'Ysabeau SC', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+footer{
+    width: 100%;
+    color: var(--main-neutral-30);
+}
+.footer_link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: var(--main-text-color);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--main-text-color);
+    border-radius: 50%;
+    /*transição para quando passar o mouse emcima do icone das midias sociais, ele não mudar a opacidade tão rápido*/
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer_link:hover {
+    opacity: 0.8;
+}
+
+#footer_social_media .footer_link i{
+    /*aumentando o tamanho dos icones dentro da bolinha*/
+    font-size: 1.25rem;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+    background: #4267b3;
+}
+#LinkedIn{
+    background: #0e76a8;
+}
+#whatsapp{
+    background: #25d366;
+}
+
+/*alterando as listas*/
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;    
+}
+
+
+/*mudando a cor dos links que ficam dentro do footer link*/
+
+
   
