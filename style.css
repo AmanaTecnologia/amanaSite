@@ -76,6 +76,7 @@
     background-size: 400%, 400%;
     animation: cores 15s ease infinite;
     
+    
 }
 
 @keyframes cores {
@@ -104,6 +105,7 @@
     background: linear-gradient(45deg, #d4a373, #687466, #cd8d7b, #fbc490);
     background-size: 400%, 400%;
     animation: cores 15s ease infinite;
+    background-repeat: no-repeat; /*teste para a animação não ficar com uma marca de divisão*/
 }
 /*font-family: 'Buda', cursive;
 font-family: 'Poiret One', cursive;
