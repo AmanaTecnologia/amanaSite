@@ -230,6 +230,7 @@ footer{
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
+    margin-left: 4rem;
 }
 
 #footer_social_media .footer-link{
