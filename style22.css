@@ -1,0 +1,352 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+    /*Variables* - a vantagem de usar assim, é que se um site que eu recriei mudar a cor, eu não preciso ficar pesquisando a cor para alterar na mão, só alteraria em um único lugar*/
+
+:root {
+    /*Colors*/
+    --main-bg-color: #000;
+    --main-text-color: #fff;
+    --main-grey-color: #222;
+    --main-red-color: #f40612;
+    --main-secundary-grey-color: #303030;
+    --main-neutral-0: #d4a373;
+    --main-neutral-10: ##687466;
+    --main-neutral-30: ##cd8d7b;
+    --main-neutral-30: #fbc490;
+
+
+    /*Font sizes*/
+    --fs--16: 16px;
+    --fs--18: 18px;
+    --fs--20: 20px;
+    --fs--24: 24px;
+    --fs--26: 26px;
+    --fs--28: 28px;
+    --fs--32: 32px;
+    --fs--40: 40px;
+    --fs--48: 48px;
+    --fs--64: 64px;
+}
+
+.bt {
+    font-family: "Zapfino", serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #fff;
+    border: 0.01rem solid #fff;
+    padding: 2rem 4rem;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+@keyframes jumping {
+    from {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #d4a373, #687466, #cd8d7b, #fbc490);
+    background-size: 400%, 400%;
+    animation: cores 15s ease infinite;
+    
+    
+}
+
+@keyframes cores {
+    0% {
+        background-position: 0%, 50%;
+    }
+
+    50% {
+        background-position: 100%, 50%;
+    }
+
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+
+#conteudo {
+    height: auto;
+}
+
+.bg2 {
+    
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #d4a373, #687466, #cd8d7b, #fbc490);
+    background-size: 400%, 400%;
+    animation: cores 15s ease infinite;
+    background-repeat: no-repeat; /*teste para a animação não ficar com uma marca de divisão*/
+}
+/*font-family: 'Buda', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Pompiere', cursive;
+font-family: 'Ysabeau SC', sans-serif;*/
+
+.text {
+    font-family: 'Buda', cursive;
+    font-size: 20px;
+    color: #000;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#imgPessoal {
+    border-radius: 80px;
+    justify-content: center;
+    box-shadow: 5px -10px 10px rgb(114, 113, 105);
+}
+.bg3{
+    text-decoration: none;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #d4a373, #687466, #cd8d7b, #fbc490);
+    background-size: 400%, 400%;
+    animation: cores 15s ease infinite;
+    padding: 40px;
+}
+
+.carousel-imagens{
+    width: 800px;
+    text-decoration:none;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    #inicio{
+        background-size: cover;
+        
+    }
+
+    
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu a.dropdown-item:hover {
+    background-color: #faebd7;
+    color: #000;
+  }
+
+  #tituloSecundario{
+margin: 5%;
+  }
+
+
+  .card{
+    width: auto;
+  }
+
+  .btn{
+    background-color: #ecc38d;
+    color: #000;
+    font-family: 'Poiret One', sans-serif;
+    border-color: rgb(214, 173, 119);
+  }
+
+  .links{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .col{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  /* CSS para o botão */
+.btn-primary:hover {
+    background-color: rgb(165, 130, 130); 
+    
+
+}
+
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Poiret+One&family=Pompiere&family=Ysabeau+SC:wght@300&display=swap');
+*{
+    font-family: 'Ysabeau SC', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px; /*Espaçamento entre as letras*/
+}
+
+footer{
+    width: 100%;
+    color: var(--main-neutral-30);
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: var(--main-bg-color);
+    display: grid; /*Distribuindo o conteúdo em 4 colunas*/
+    grid-template-columns: repeat(4,1fr); /*especificando que queremos 4 colunas*/
+    padding: 3rem 3.5rem;
+}
+/*Alterações na primeira coluna*/
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+/*Alterações nos ícones da segunda coluna*/
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+}
+
+#footer_social_media .footer-link{
+    /*Depois de alterar o fundo de cada ícone, percebemos que não está alinhado, vamos usar essas três para fazer isso*/
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    height: 2.5rem; /*Essa largura e altura é para conseguirmos colocar um background separado para cada ícone*/
+    width: 2.5rem;  
+    color: var(--main-text-color); /*Cor do ícone*/
+    border-radius: 50%; 
+    transition: all 0.4s; /*transição para quando passar o mouse emcima do icone das midias sociais, ele não mudar a opacidade tão rápido*/    
+}
+
+/*o estilo definido para o seletor ":hover" será aplicado temporariamente*/
+#footer_social_media .footer-link:hover {
+    opacity: 0.8; /*Ao passar o mouse vimos que essa mudança de opacidade está muito rápida, para ser mais suave vamos adicionar uma transição na sessão #footer_social_media .footer-link*/
+}
+
+#footer_social_media .footer-link i{
+    /*aumentando o tamanho dos icones dentro da bolinha*/
+    font-size: 1.25rem;
+}
+
+/*Alterando o background de cada ícone*/
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+    background: #4267b3;
+}
+#LinkedIn{
+    background: #0e76a8;
+}
+#whatsapp{
+    background: #25d366;
+}
+
+/*alterando as listas*/
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;    
+}
+
+
+/*mudando a cor dos links que ficam dentro do footer link*/
+.footer-list .footer-link{
+    color: var(--main-neutral-0); /*Alterando a cor da letra, e também iremos adicionar um hover para quando o mouse passar por cima dessas mesmas palavras*/
+}
+
+.footer-list .footer-link:hover{
+    color: var(--main-text-color);
+    transition: all 0.4s; /*Da mesma forma que a opcaidade, vamos fazer essa mudança de cor ter uma transição suave*/
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p{
+    color: var(--main-neutral-0);
+}
+
+/*Customizando a caixa de texto*/
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--main-neutral-0);
+    border-radius: 4px;
+}
+
+/*Tirando o estilo do input para a visualização das definições acima aparecerem*/
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: var(--main-neutral-30);
+    border: none;
+    color: var(--main-bg-color);
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+#input_group button:hover{
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+}
+
+/*Deixando responsivo*/
+@media screen and(max-width: 768px) {
+    #footer_content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and(max-width: 426px) {
+    #footer_content{
+        grid-template-columns: repeat(1,1fr);
+        padding: 3rem 2rem;
+    }
+}
