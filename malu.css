@@ -1,0 +1,280 @@
+/*INICIO Cor de fundo e responsividade*/
+#fundo {
+    background-image: linear-gradient(10deg, #71a1ff, #7797f8, #7d8df1, #8483e8, #8a78df, #826acb, #795cb7, #704fa4, #583c83, #412a64, #2b1946, #18072b);
+    animation: cores 15s ease infinite;
+    background-size: 400%, 400%;
+    text-align: center;
+    font-family: 'DM Mono', monospace, Arial, Helvetica, sans-serif;
+}
+
+@keyframes cores {
+    0% {
+        background-position: 0%, 50%;
+    }
+
+    50% {
+        background-position: 100%, 50%;
+    }
+
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+
+.nav-action {
+    background-color: #18072b;
+    opacity: 60%;
+}
+
+/*FIM Cor de fundo e responsividade*/
+
+/*INICIO menu*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: -18px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin: 0.7vw;
+    /* Adicionei uma margem nos itens do menu para espaçamento */
+}
+
+.logomenu {
+    width: 5vw;
+    margin-left: 1vw;
+    /* Adicionei uma margem à esquerda para espaçamento */
+}
+
+
+.navbar li {
+    position: relative;
+    float: left;
+}
+
+.navbar li a {
+    text-decoration: none;
+    display: block;
+}
+
+.navbar li a:hover {
+    font-size: large;
+
+}
+
+.navbar li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: none;
+}
+
+.navbar li:hover ul,
+.navbar li.over ul {
+    display: block;
+    margin: 0;
+}
+
+.navbar li ul li {
+     display: flex;
+     font-size: 2px;
+    margin-left: 0;
+
+}
+
+/*FIM menu*/
+
+
+/*INÍCIO sobre nós*/
+
+/*FIM sobre nós*/
+
+
+/*INICIO PADRÃO SECÇÕES*/
+section {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    display: block;
+    margin-top: 10vh;
+}
+
+.titulo {
+    color: #18072B;
+}
+
+.pos-titulo {
+    width: 5%;
+    border-color: #18072B;
+}
+
+/*FIM PADRÃO SECÇÕES*/
+
+/*INICIO do Home*/
+#home {
+    display: flex;
+    width: 100%;
+    margin-top: 10%;
+}
+
+#imghome {
+    width: 20%;
+    object-fit: contain;
+}
+
+.texto {
+    font-family: 'DM Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #000;
+    text-align: justify;
+    align-self: center;
+    margin: 5%;
+    line-height: 10vh;
+}
+
+/*FIM do Home*/
+
+/*INICIO dos serviços prestados*/
+.servicosprestados {
+    display: grid;
+    /*Distribuindo o conteúdo em 4 colunas*/
+    grid-template-columns: repeat(4, 1fr);
+    /*especificando que queremos 4 colunas*/
+    padding: 2rem 2.5rem;
+}
+
+.imgservico {
+    width: 70%;
+    border-style: solid;
+    border-color: #18072B;
+    border-radius: 10px;
+}
+
+.imgservico:hover {
+    filter: brightness(80%);
+}
+
+.linkservico {
+    text-decoration: none;
+    color: #000;
+}
+
+/*FIM dos serviços prestados*/
+
+/*ORGANIZAR*/
+
+/*footer*/
+
+.footer-link {
+    text-decoration: none;
+}
+
+#contato {
+    display: grid;
+    /*Distribuindo o conteúdo em 4 colunas*/
+    grid-template-columns: repeat(4, 1fr);
+    /*especificando que queremos 4 colunas*/
+    padding: 2rem 2.5rem;
+}
+
+/*Alterações na primeira coluna*/
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+/*Alterações nos ícones da segunda coluna*/
+#footer_social_media {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+}
+
+#footer_social_media .footer-link {
+    /*Depois de alterar o fundo de cada ícone, percebemos que não está alinhado, vamos usar essas três para fazer isso*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    /*Essa largura e altura é para conseguirmos colocar um background separado para cada ícone*/
+    width: 2.5rem;
+    /*Cor do ícone*/
+    border-radius: 50%;
+    transition: all 0.4s;
+    /*transição para quando passar o mouse emcima do icone das midias sociais, ele não mudar a opacidade tão rápido*/
+}
+
+/*o estilo definido para o seletor ":hover" será aplicado temporariamente*/
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+    /*Ao passar o mouse vimos que essa mudança de opacidade está muito rápida, para ser mais suave vamos adicionar uma transição na sessão #footer_social_media .footer-link*/
+}
+
+#footer_social_media .footer-link i {
+    /*aumentando o tamanho dos icones dentro da bolinha*/
+    font-size: 1.25rem;
+}
+
+/*Alterando o background de cada ícone*/
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background: #4267b3;
+}
+
+#LinkedIn {
+    background: #0e76a8;
+}
+
+#whatsapp {
+    background: #25d366;
+}
+
+/*alterando as listas*/
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+
+/*mudando a cor dos links que ficam dentro do footer link*/
+.footer-list .footer-link {
+    /*Alterando a cor da letra, e também iremos adicionar um hover para quando o mouse passar por cima dessas mesmas palavras*/
+}
+
+.footer-list .footer-link:hover {
+
+    transition: all 0.4s;
+    /*Da mesma forma que a opcaidade, vamos fazer essa mudança de cor ter uma transição suave*/
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    /*gap: 1.5rem;*/
+}
+
+#footer_subscribe p {}
+
+/*Customizando a caixa de texto*/
+#input_group {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
