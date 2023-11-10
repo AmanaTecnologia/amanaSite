@@ -271,12 +271,6 @@ section {
     list-style: none;
 }
 
-
-/*mudando a cor dos links que ficam dentro do footer link*/
-.footer-list .footer-link {
-    /*Alterando a cor da letra, e também iremos adicionar um hover para quando o mouse passar por cima dessas mesmas palavras*/
-}
-
 .footer-list .footer-link:hover {
 
     transition: all 0.4s;
@@ -288,8 +282,6 @@ section {
     flex-direction: column;
     /*gap: 1.5rem;*/
 }
-
-#footer_subscribe p {}
 
 /*Customizando a caixa de texto*/
 #input_group {
