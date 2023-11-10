@@ -41,7 +41,7 @@
 }
 
 .menu {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     align-items: center;
 }
@@ -49,8 +49,29 @@
 .menu a {
     text-decoration: none;
     color: white;
-    margin: 0.7vw;
+    margin: 2vw;
     /* Adicionei uma margem nos itens do menu para espaçamento */
+    padding: 0;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown{
+    font-size: medium;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+    background-color: #704fa4;
+    border-radius: 10px;
 }
 
 .logomenu {
@@ -62,7 +83,6 @@
 
 .navbar li {
     position: relative;
-    float: left;
 }
 
 .navbar li a {
@@ -72,6 +92,18 @@
 
 .navbar li a:hover {
     font-size: large;
+    transition: all 0.3s ease-in-out;
+    background-color: #7d74a8;
+    border-radius: 5px;
+
+}
+
+.dropdown li a:hover {
+    font-size: large;
+    transition: all 0.3s ease-in-out;
+    background-color: #7d74a8;
+    border-radius: 5px;
+    width: 150px;
 
 }
 
@@ -83,17 +115,11 @@
 }
 
 .navbar li:hover ul,
-.navbar li.over ul {
+.navbar li.over ul { 
     display: block;
     margin: 0;
 }
 
-.navbar li ul li {
-     display: flex;
-     font-size: 2px;
-    margin-left: 0;
-
-}
 
 /*FIM menu*/
 
