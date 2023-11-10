@@ -3,7 +3,6 @@
     background-image: linear-gradient(10deg, #71a1ff, #7797f8, #7d8df1, #8483e8, #8a78df, #826acb, #795cb7, #704fa4, #583c83, #412a64, #2b1946, #18072b);
     animation: cores 15s ease infinite;
     background-size: 400%, 400%;
-    text-align: center;
     font-family: 'DM Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
@@ -25,10 +24,19 @@
     background-color: #18072b;
     opacity: 60%;
 }
-
 /*FIM Cor de fundo e responsividade*/
 
+
+
 /*INICIO menu*/
+
+/* Imagem do Navbar */
+.logomenu {
+    width: 5vw;
+    margin-left: 1vw;
+}
+
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -40,47 +48,34 @@
     z-index: 1000;
 }
 
+/* Elementos referente à estética do li */
 .menu {
     list-style-type: none;
     display: flex;
     align-items: center;
+ 
 }
 
 .menu a {
     text-decoration: none;
     color: white;
     margin: 2vw;
-    /* Adicionei uma margem nos itens do menu para espaçamento */
-    padding: 0;
     white-space: nowrap;
     z-index: 1000;
-}
-
-.menu ul{
-    list-style-type: none;
-    padding: 0;
+    padding: 0.8vw;
 }
 
 .dropdown{
-    font-size: medium;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    /* justify-content: space-between; */
-    text-align: center;
     list-style-type: none;
-    margin-top: 0;
-    background-color: #704fa4;
-    border-radius: 10px;
+    padding: 0;
+    display:none;
+	position:absolute;
+	top:25%;
+	left:0;
+	padding:0
 }
 
-.logomenu {
-    width: 5vw;
-    margin-left: 1vw;
-    /* Adicionei uma margem à esquerda para espaçamento */
-}
-
-
+/* Faz o dropdown ficar na posição correta */
 .navbar li {
     position: relative;
 }
@@ -90,37 +85,35 @@
     display: block;
 }
 
-.navbar li a:hover {
-    font-size: large;
+/* Cor de fundo do dropdown */
+.bg-dropdown{
     transition: all 0.3s ease-in-out;
-    background-color: #7d74a8;
-    border-radius: 5px;
+    background-color: rgba(24, 8, 43, 0.85);
+    border-radius: 10px;  
+}
 
+/* Todas as alterações quando passa o mouse 
+em cima dos elementos navbar */
+
+.navbar li a:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(24, 8, 43, 0.85);
+    padding: 0.8vw;
+    border-radius: 10px;
 }
 
 .dropdown li a:hover {
-    font-size: large;
     transition: all 0.3s ease-in-out;
     background-color: #7d74a8;
     border-radius: 5px;
-    width: 150px;
-
 }
 
-.navbar li ul {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    display: none;
-}
-
+/* Importante para o dropdown aparecer */
 .navbar li:hover ul,
 .navbar li.over ul { 
     display: block;
     margin: 0;
 }
-
-
 /*FIM menu*/
 
 
