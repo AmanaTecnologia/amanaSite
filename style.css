@@ -33,7 +33,6 @@
 /* Imagem do Navbar */
 .logomenu {
     width: 5vw;
-    margin-left: 1vw;
 }
 
 
@@ -231,6 +230,9 @@ footer{
     margin-left: 50%;
     margin-top: 0;
 } 
+#footer_contacts img{
+    margin-left: 15%;
+}
 
 #footer_contacts h1 {
     margin-bottom: 0.75rem;
@@ -248,22 +250,20 @@ footer{
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
-    /* background-color: black; */
     width: 400px;
     height: 100px;
 }
 
 #footer_social_media .footer-link{
-    /*Depois de alterar o fundo de cada ícone, percebemos que não está alinhado, vamos usar essas três para fazer isso*/
     display: flex;
     align-items: center;
     justify-content: center;    
 
-    height: 2.5rem; /*Essa largura e altura é para conseguirmos colocar um background separado para cada ícone*/
+    height: 2.5rem;
     width: 2.5rem;  
-    color: black; /*Cor do ícone*/
+    color: black;
     border-radius: 50%; 
-    transition: all 0.4s; /*transição para quando passar o mouse emcima do icone das midias sociais, ele não mudar a opacidade tão rápido*/    
+    transition: all 0.4s;
 }
 
 /*o estilo definido para o seletor ":hover" será aplicado temporariamente*/
