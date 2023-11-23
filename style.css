@@ -7,16 +7,12 @@
 }
 
 @keyframes cores {
-    0% {
-        background-position: 0%, 50%;
+    0%, 100% {
+        background-position: 0% 50%;
     }
 
     50% {
-        background-position: 100%, 50%;
-    }
-
-    100% {
-        background-position: 0%, 50%;
+        background-position: 100% 50%;
     }
 }
 
@@ -320,4 +316,92 @@ footer{
     margin-top: auto;
     color: black; 
     background-color: #a38a8a;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 60px; /* Ajuste conforme necessário */
+    }
+
+    .menu {
+        margin: 1vw; /* Reduzir a margem para economizar espaço */
+    }
+
+        /* Sessão home responsiva */
+    #home {
+        flex-direction: column; /* Empilhar em vez de exibir lado a lado */
+    }
+
+    #imghome {
+        width: 70%; /* Redimensionar a imagem para telas menores */
+        margin: 5% auto; /* Centralizar a imagem */
+    }
+
+    .texto {
+        margin: 2% 5%; /* Reduzir as margens para economizar espaço */
+    }
+
+    .logomenu {
+        width: 10%; /* Ajuste conforme necessário */
+    }
+
+    .navbar {
+        height: 60px;
+    }
+
+    .menu {
+        margin: 1vw;
+    }
+
+    .navbar li {
+        position: static;
+    }
+
+    .navbar li a {
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .dropdown {
+        top: 60px;
+    }
+
+
+    /* Sessão serviços prestados */
+    .servicosprestados{
+        grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas em telas menores */
+        gap: 1rem; /* Adiciona espaço entre os serviços */
+    }
+    .imgservico {
+        width: 100%; /* Faz com que as imagens ocupem 100% da largura do contêiner */
+        border: none; /* Remove a borda para economizar espaço */
+    }
+    /* Fim da Sessão serviços prestados */
+
+    #footer_contacts {
+        margin-left: 0;
+        text-align: center; 
+    }
+
+    #footer_contacts img {
+        margin-left: 0;
+    }   
+    #footer_social_media {
+        align-items: center;
+        margin-left: 30%;
+    }
+
+    #footer_social_media .footer-link {
+        margin-bottom: 0;
+    }
+
+    .footer-list {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer_content {
+        grid-template-columns: 1fr;
+    }
 }
