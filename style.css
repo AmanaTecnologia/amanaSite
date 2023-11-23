@@ -197,95 +197,125 @@ section {
 
 /*footer*/
 
-.footer-link {
+@import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Poiret+One&family=Pompiere&family=Ysabeau+SC:wght@300&display=swap');
+*{
+    font-family: 'Ysabeau SC', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px; /*Espaçamento entre as letras*/
+}
+
+footer{
+    width: 100%;
+    color: rgb(32, 29, 29);
+}
+
+.footer-link{
     text-decoration: none;
 }
 
-#contato {
-    display: grid;
-    /*Distribuindo o conteúdo em 4 colunas*/
-    grid-template-columns: repeat(4, 1fr);
-    /*especificando que queremos 4 colunas*/
-    padding: 2rem 2.5rem;
+#footer_content{
+    display: grid; /*Distribuindo o conteúdo em 4 colunas*/
+    grid-template-columns: repeat(4,1fr); /*especificando que queremos 4 colunas*/
+    padding: 3rem 3.5rem;
+    gap: 2rem;
+    align-items: center; /* Alinha verticalmente os itens dentro do grid */
+    width: 50%;
 }
 
 /*Alterações na primeira coluna*/
+#footer_contacts{
+    margin-left: 50%;
+    margin-top: 0;
+} 
+
 #footer_contacts h1 {
     margin-bottom: 0.75rem;
+    margin-left: 1.45rem;
 }
+
+#footer_contacts p {
+    margin-bottom: 0.75rem;
+    margin-left: 1.65rem;
+}
+
 
 /*Alterações nos ícones da segunda coluna*/
-#footer_social_media {
+#footer_social_media{
     display: flex;
+    gap: 2rem;
     margin-top: 1.5rem;
-    margin-left: 4rem;
+    /* background-color: black; */
+    width: 400px;
+    height: 100px;
 }
 
-#footer_social_media .footer-link {
+#footer_social_media .footer-link{
     /*Depois de alterar o fundo de cada ícone, percebemos que não está alinhado, vamos usar essas três para fazer isso*/
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    /*Essa largura e altura é para conseguirmos colocar um background separado para cada ícone*/
-    width: 2.5rem;
-    /*Cor do ícone*/
-    border-radius: 50%;
-    transition: all 0.4s;
-    /*transição para quando passar o mouse emcima do icone das midias sociais, ele não mudar a opacidade tão rápido*/
+    justify-content: center;    
+
+    height: 2.5rem; /*Essa largura e altura é para conseguirmos colocar um background separado para cada ícone*/
+    width: 2.5rem;  
+    color: black; /*Cor do ícone*/
+    border-radius: 50%; 
+    transition: all 0.4s; /*transição para quando passar o mouse emcima do icone das midias sociais, ele não mudar a opacidade tão rápido*/    
 }
 
 /*o estilo definido para o seletor ":hover" será aplicado temporariamente*/
 #footer_social_media .footer-link:hover {
-    opacity: 0.8;
-    /*Ao passar o mouse vimos que essa mudança de opacidade está muito rápida, para ser mais suave vamos adicionar uma transição na sessão #footer_social_media .footer-link*/
+    opacity: 0.8; /*Ao passar o mouse vimos que essa mudança de opacidade está muito rápida, para ser mais suave vamos adicionar uma transição na sessão #footer_social_media .footer-link*/
 }
 
-#footer_social_media .footer-link i {
+#footer_social_media .footer-link i{
     /*aumentando o tamanho dos icones dentro da bolinha*/
     font-size: 1.25rem;
 }
 
 /*Alterando o background de cada ícone*/
-#instagram {
+#instagram{
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
-
-#facebook {
+#facebook{
     background: #4267b3;
 }
-
-#LinkedIn {
+#LinkedIn{
     background: #0e76a8;
 }
-
-#whatsapp {
+#whatsapp{
     background: #25d366;
 }
 
 /*alterando as listas*/
-.footer-list {
+.footer-list{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    list-style: none;
+    list-style: none;    
+    padding: 0;
+    margin-left: 70%;
+    width: 200px;
 }
 
-.footer-list .footer-link:hover {
 
+/*mudando a cor dos links que ficam dentro do footer link*/
+.footer-list .footer-link{
+    color: black; 
+}
+
+.footer-list .footer-link:hover{
+    color: #a38a8a;
     transition: all 0.4s;
-    /*Da mesma forma que a opcaidade, vamos fazer essa mudança de cor ter uma transição suave*/
 }
 
-#footer_subscribe {
-    display: flex;
-    flex-direction: column;
-    /*gap: 1.5rem;*/
-}
-
-/*Customizando a caixa de texto*/
-#input_group {
-    display: flex;
+#footer_copyright{
+    display:flex;
+    justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: auto;
+    color: black; 
+    background-color: #a38a8a;
 }
