@@ -332,9 +332,10 @@ footer{
         flex-direction: column; /* Empilhar em vez de exibir lado a lado */
     }
 
-    #imghome {
-        width: 70%; /* Redimensionar a imagem para telas menores */
-        margin: 5% auto; /* Centralizar a imagem */
+    #imghome {       
+            content: url('/logo/amanaDark.png'); /* Substitua pelo caminho da sua nova imagem */
+            width: 70%; /* Redimensionar a nova imagem para telas menores */
+            margin: 5% auto; /* Centralizar a nova imagem */       
     }
 
     .texto {
