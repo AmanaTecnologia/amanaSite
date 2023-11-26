@@ -7,7 +7,9 @@
 }
 
 @keyframes cores {
-    0%, 100% {
+
+    0%,
+    100% {
         background-position: 0% 50%;
     }
 
@@ -20,6 +22,7 @@
     background-color: #18072b;
     opacity: 60%;
 }
+
 /*FIM Cor de fundo e responsividade*/
 
 
@@ -49,7 +52,7 @@
     list-style-type: none;
     display: flex;
     align-items: center;
- 
+
 }
 
 .menu a {
@@ -61,14 +64,14 @@
     padding: 0.8vw;
 }
 
-.dropdown{
+.dropdown {
     list-style-type: none;
     padding: 0;
-    display:none;
-	position:absolute;
-	top:25%;
-	left:0;
-	padding:0
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    padding: 0
 }
 
 /* Faz o dropdown ficar na posição correta */
@@ -80,17 +83,18 @@
     text-decoration: none;
     display: block;
     width: 100%;
-    margin-left:0;
+    margin-left: 0;
 }
+
 .navbar li figure {
     margin: 0;
 }
 
 /* Cor de fundo do dropdown */
-.bg-dropdown{
+.bg-dropdown {
     transition: all 0.3s ease-in-out;
     background-color: rgba(24, 8, 43, 0.85);
-    border-radius: 10px;  
+    border-radius: 10px;
 }
 
 /* Todas as alterações quando passa o mouse 
@@ -111,10 +115,11 @@ em cima dos elementos navbar */
 
 /* Importante para o dropdown aparecer */
 .navbar li:hover ul,
-.navbar li.over ul { 
+.navbar li.over ul {
     display: block;
     margin: 0;
 }
+
 /*FIM menu*/
 
 
@@ -199,6 +204,7 @@ section {
 /*footer*/
 
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Poiret+One&family=Pompiere&family=Ysabeau+SC:wght@300&display=swap');
+
 /*footer*/
 footer {
     position: relative;
@@ -254,51 +260,44 @@ footer .menu li a:hover {
     opacity: 1;
 }
 
-footer p {
-    color: var(--cor-de-texto-no-rodape);
-    text-align: center;
-    margin: 0;
-}
-
-footer .onda {
-    position: absolute;
-    top: -100px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url('/imagens/wave.png');
-    background-size: 1000px 100px;
-}
 
 
 /* Final do Footer */
 
 @media screen and (max-width: 768px) {
     .navbar {
-        height: 60px; /* Ajuste conforme necessário */
+        height: 60px;
+        /* Ajuste conforme necessário */
     }
 
     .menu {
-        margin: 1vw; /* Reduzir a margem para economizar espaço */
+        margin: 1vw;
+        /* Reduzir a margem para economizar espaço */
     }
 
-        /* Sessão home responsiva */
+    /* Sessão home responsiva */
     #home {
-        flex-direction: column; /* Empilhar em vez de exibir lado a lado */
+        flex-direction: column;
+        /* Empilhar em vez de exibir lado a lado */
     }
 
-    #imghome {       
-            content: url('/logo/amanaDark.png'); /* Substitua pelo caminho da sua nova imagem */
-            width: 70%; /* Redimensionar a nova imagem para telas menores */
-            margin: 5% auto; /* Centralizar a nova imagem */       
+    #imghome {
+        content: url('/logo/amanaDark.png');
+        /* Substitua pelo caminho da sua nova imagem */
+        width: 70%;
+        /* Redimensionar a nova imagem para telas menores */
+        margin: 5% auto;
+        /* Centralizar a nova imagem */
     }
 
     .texto {
-        margin: 2% 5%; /* Reduzir as margens para economizar espaço */
+        margin: 2% 5%;
+        /* Reduzir as margens para economizar espaço */
     }
 
     .logomenu {
-        width: 10%; /* Ajuste conforme necessário */
+        width: 10%;
+        /* Ajuste conforme necessário */
     }
 
     .navbar {
@@ -324,40 +323,26 @@ footer .onda {
 
 
     /* Sessão serviços prestados */
-    .servicosprestados{
-        grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas em telas menores */
-        gap: 1rem; /* Adiciona espaço entre os serviços */
+    .servicosprestados {
+        grid-template-columns: repeat(2, 1fr);
+        /* Muda para 2 colunas em telas menores */
+        gap: 1rem;
+        /* Adiciona espaço entre os serviços */
     }
+
     .imgservico {
-        width: 100%; /* Faz com que as imagens ocupem 100% da largura do contêiner */
-        border: none; /* Remove a borda para economizar espaço */
-    }
-    /* Fim da Sessão serviços prestados */
-
-    #footer_contacts {
-        margin-left: 0;
-        text-align: center; 
-    }
-
-    #footer_contacts img {
-        margin-left: 0;
-    }   
-    #footer_social_media {
-        align-items: center;
-        margin-left: 30%;
-    }
-
-    #footer_social_media .footer-link {
-        margin-bottom: 0;
-    }
-
-    .footer-list {
-        margin-left: 0;
         width: 100%;
-        text-align: center;
+        /* Faz com que as imagens ocupem 100% da largura do contêiner */
+        border: none;
+        /* Remove a borda para economizar espaço */
     }
 
-    #footer_content {
-        grid-template-columns: 1fr;
+    /* Fim da Sessão serviços prestados */
+}
+
+@media only screen and (max-width: 400px) {
+    footer p{
+        margin-left: 25%;
+        margin-right: 10%;
     }
 }
