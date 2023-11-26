@@ -259,8 +259,11 @@ footer .menu li a {
 footer .menu li a:hover {
     opacity: 1;
 }
-
-
+footer p {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 /* Final do Footer */
 
