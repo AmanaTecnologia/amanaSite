@@ -195,128 +195,126 @@ section {
 /*footer*/
 
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Poiret+One&family=Pompiere&family=Ysabeau+SC:wght@300&display=swap');
-*{
-    font-family: 'Ysabeau SC', 'sans-serif';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px; /*Espaçamento entre as letras*/
-}
-
-footer{
+/*footer*/
+footer {
+    position: relative;
     width: 100%;
-    color: rgb(32, 29, 29);
-}
-
-.footer-link{
-    text-decoration: none;
-}
-
-#footer_content{
-    display: grid; /*Distribuindo o conteúdo em 4 colunas*/
-    grid-template-columns: repeat(4,1fr); /*especificando que queremos 4 colunas*/
-    padding: 3rem 3.5rem;
-    gap: 2rem;
-    align-items: center; /* Alinha verticalmente os itens dentro do grid */
-    width: 50%;
-}
-
-/*Alterações na primeira coluna*/
-#footer_contacts{
-    margin-left: 50%;
-    margin-top: 0;
-} 
-#footer_contacts img{
-    margin-left: 15%;
-}
-
-#footer_contacts h1 {
-    margin-bottom: 0.75rem;
-    margin-left: 1.45rem;
-}
-
-#footer_contacts p {
-    margin-bottom: 0.75rem;
-    margin-left: 1.65rem;
-}
-
-
-/*Alterações nos ícones da segunda coluna*/
-#footer_social_media{
+    background: var(--cor-identidade-mariane-fundo);
+    min-height: 100px;
+    padding: 0px;
     display: flex;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    width: 400px;
-    height: 100px;
-}
-
-#footer_social_media .footer-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-
-    height: 2.5rem;
-    width: 2.5rem;  
-    color: black;
-    border-radius: 50%; 
-    transition: all 0.4s;
-}
-
-/*o estilo definido para o seletor ":hover" será aplicado temporariamente*/
-#footer_social_media .footer-link:hover {
-    opacity: 0.8; /*Ao passar o mouse vimos que essa mudança de opacidade está muito rápida, para ser mais suave vamos adicionar uma transição na sessão #footer_social_media .footer-link*/
-}
-
-#footer_social_media .footer-link i{
-    /*aumentando o tamanho dos icones dentro da bolinha*/
-    font-size: 1.25rem;
-}
-
-/*Alterando o background de cada ícone*/
-#instagram{
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-#facebook{
-    background: #4267b3;
-}
-#LinkedIn{
-    background: #0e76a8;
-}
-#whatsapp{
-    background: #25d366;
-}
-
-/*alterando as listas*/
-.footer-list{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;    
-    padding: 0;
-    margin-left: 70%;
-    width: 200px;
-}
-
-
-/*mudando a cor dos links que ficam dentro do footer link*/
-.footer-list .footer-link{
-    color: black; 
-}
-
-.footer-list .footer-link:hover{
-    color: #a38a8a;
-    transition: all 0.4s;
-}
-
-#footer_copyright{
-    display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9rem;
-    margin-top: auto;
-    color: black; 
-    background-color: #a38a8a;
+    flex-direction: column;
 }
+
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a,
+footer .menu li a {
+    font-size: 2em;
+    color: var(--cor-de-texto-no-rodape);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: var(--cor-de-texto-no-rodape);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: var(--cor-de-texto-no-rodape);
+    text-align: center;
+    margin: 0;
+}
+
+footer .onda {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('/imagens/wave.png');
+    background-size: 1000px 100px;
+}
+
+footer .onda#onda1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animacaoOnda 4s linear infinite;
+}
+
+footer .onda#onda2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animacaoOnda_2 4s linear infinite;
+}
+
+footer .onda#onda3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animacaoOnda 3s linear infinite;
+}
+
+footer .onda#onda4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animacaoOnda_2 3s linear infinite;
+}
+
+
+@keyframes animacaoOnda {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animacaoOnda_2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+/* Final do Footer */
 
 @media screen and (max-width: 768px) {
     .navbar {
