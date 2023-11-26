@@ -1,4 +1,8 @@
 /*INICIO Cor de fundo e responsividade*/
+:root*{
+    --cor-de-texto-no-rodape: #f5f5f5;
+    
+}
 #fundo {
     background-image: linear-gradient(10deg, #71a1ff, #7797f8, #7d8df1, #8483e8, #8a78df, #826acb, #795cb7, #704fa4, #583c83, #412a64, #2b1946, #18072b);
     animation: cores 15s ease infinite;
@@ -122,12 +126,6 @@ em cima dos elementos navbar */
 
 /*FIM menu*/
 
-
-/*INÍCIO sobre nós*/
-
-/*FIM sobre nós*/
-
-
 /*INICIO PADRÃO SECÇÕES*/
 section {
     padding-left: 5%;
@@ -196,20 +194,14 @@ section {
     text-decoration: none;
     color: #000;
 }
-
 /*FIM dos serviços prestados*/
 
-/*ORGANIZAR*/
-
 /*footer*/
-
 @import url('https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Poiret+One&family=Pompiere&family=Ysabeau+SC:wght@300&display=swap');
 
 /*footer*/
 footer {
-    position: relative;
     width: 100%;
-    background: var(--cor-identidade-mariane-fundo);
     min-height: 100px;
     padding: 0px;
     display: flex;
@@ -236,10 +228,10 @@ footer .menu li {
 footer .social_icon li a,
 footer .menu li a {
     font-size: 2em;
-    color: var(--cor-de-texto-no-rodape);
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
+    color:#18072B;
 }
 
 footer .social_icon li a:hover {
@@ -260,10 +252,11 @@ footer .menu li a:hover {
     opacity: 1;
 }
 footer p {
-    color: red;
     padding: 0;
     margin: 0;
-    border: 0;
+}
+footer ul.social_icon {
+    padding: 0;
 }
 
 /* Final do Footer */
