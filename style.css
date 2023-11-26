@@ -40,6 +40,7 @@
     top: -18px;
     left: 0px;
     width: 100%;
+    height: 100px;
     z-index: 1000;
 }
 
@@ -80,6 +81,9 @@
     display: block;
     width: 100%;
     margin-left:0;
+}
+.navbar li figure {
+    margin: 0;
 }
 
 /* Cor de fundo do dropdown */
@@ -266,54 +270,7 @@ footer .onda {
     background-size: 1000px 100px;
 }
 
-footer .onda#onda1 {
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animacaoOnda 4s linear infinite;
-}
 
-footer .onda#onda2 {
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animacaoOnda_2 4s linear infinite;
-}
-
-footer .onda#onda3 {
-    z-index: 1000;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animacaoOnda 3s linear infinite;
-}
-
-footer .onda#onda4 {
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animacaoOnda_2 3s linear infinite;
-}
-
-
-@keyframes animacaoOnda {
-    0% {
-        background-position-x: 1000px;
-    }
-
-    100% {
-        background-position-x: 0px;
-    }
-}
-
-@keyframes animacaoOnda_2 {
-    0% {
-        background-position-x: 0px;
-    }
-
-    100% {
-        background-position-x: 1000px;
-    }
-}
 /* Final do Footer */
 
 @media screen and (max-width: 768px) {
